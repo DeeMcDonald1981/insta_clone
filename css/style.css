@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#profile, #login-page {
+  padding-top: 5rem;
+}
+
+.login.reg-btn {
+  display: none;
+}
+
+.display-btn {
+  display: block !important;
+}
+
+.hide-btn {
+  display: none !important;
+}
+
+#login-page {
+  position: relative;
+  height: 100vh;
+}
+#login-page .login-left {
+  letter-spacing: 0.55rem;
+  font-size: 1.6rem;
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 2rem;
+}
+#login-page .login-right.form-login {
+  display: none;
+}
+#login-page .display-form {
+  display: block !important;
+}
+#login-page .hide-form {
+  display: none !important;
+}
+#login-page .login-right {
+  width: 60%;
+}
+#login-page .login-right h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 0.75rem;
+}
+#login-page .container {
+  margin-top: 10rem;
+  position: relative;
+  color: #fff;
+  display: flex;
+}
+#login-page .container .login-form {
+  padding: 3rem;
+  border: 3px solid #fff;
+  border-radius: 8px;
+}
+#login-page .container .login-form label {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+#login-page .container .login-form input {
+  color: #fff;
+}
+#login-page .container .login-form input:not([type=submit]) {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+}
+#login-page .container .login-form input:not([type=submit]):active {
+  background: none;
+  outline: none;
+}
+#login-page .container .login-form [type=submit] {
+  border: 1px solid #fff;
+  background: none;
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+#login-page .page-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/pix_spin_login.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#main-form, #output-section {
+  width: 60%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 3px solid #ccc;
+  border-radius: 6px;
+}
+#main-form [type=text], #main-form select, #output-section [type=text], #output-section select {
+  margin: 0.7rem 0;
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 6px;
+}
+#main-form [type=submit], #output-section [type=submit] {
+  display: block;
+  padding: 0.75rem;
+}
+
+.value-0 {
+  background: #ccc;
+}
+
+#top-bar {
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ccc;
+}
+#top-bar a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+#top-bar [type=search] {
+  text-align: center;
+  padding: 0.85rem;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+#top-bar .container {
+  min-height: 50px;
+  display: flex;
+}
+#top-bar .sec-left {
+  flex: 2;
+}
+#top-bar .sec-left span {
+  font-weight: bold;
+  font-size: 2.1rem;
+  position: relative;
+  bottom: 8px;
+  padding-right: 1rem;
+}
+#top-bar .sec-left img {
+  height: 40px;
+  width: auto;
+}
+#top-bar .sec-center {
+  flex: 2;
+}
+#top-bar .sec-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+#top-bar .sec-right .font-3 {
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  height: 38px;
+  width: 38px;
+}
+#top-bar .sec-right .font-3 img {
+  width: 100%;
+  border-radius: 50%;
+}
+#top-bar .sec-right .login.reg-btn {
+  left: 3rem;
+  position: absolute;
+}
+
+.ghost {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  justify-content: space-between;
+}
+.ghost .edit {
+  position: relative;
+  padding: 0.75rem;
+  background: #e6e6e6;
+  bottom: 8px;
+  font-weight: bold;
+}
+
+#profile {
+  margin-bottom: 1.5rem;
+}
+#profile a {
+  text-decoration: none;
+  color: inherit;
+}
+#profile .container {
+  padding: 0 0.75rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#profile .stats {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+#profile .stats .stat {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1rem;
+}
+#profile .stats .stat-number {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+#profile .profile-picture {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  left: 5.5rem;
+}
+#profile .username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+#profile .main-stats {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+#profile .profile-name {
+  line-height: 1.2;
+  word-spacing: 0.2rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+#profile .profile-name .name {
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+#profile .profile-name .desc {
+  font-weight: 400;
+}
+
+#posts-1 .container {
+  position: relative;
+  display: flex;
+  gap: 0.5%;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+}
+#posts-1 .container img {
+  height: 355px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+#feed {
+  margin-top: 5rem;
+}
+
+.feed-intro .image img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+.intro-box {
+  width: 50%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+.intro-box a {
+  text-decoration: none;
+  color: inherit;
+}
+.intro-box .name {
+  font-weight: bold;
+  padding-right: 1rem;
+}
+.intro-box .follow .btn-follow {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-follow {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.function-check {
+  padding: 1rem;
+}
+.function-check [type=text], .function-check [type=password], .function-check [type=email] {
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+.function-check [type=submit] {
+  width: 100px;
+  margin-top: 0.5rem;
+  padding: 0.75em 0.5rem;
+}
+
+.check-container {
+  border: 1px solid #000;
+  height: 500px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

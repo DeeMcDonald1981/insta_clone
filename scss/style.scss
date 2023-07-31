@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container{
+  width: 1040px;
+  margin: 0 auto;
+}
+
+
+#profile, #login-page{
+  padding-top: 5rem;
+}
+
+
+.login.reg-btn{
+  display: none;
+  }
+
+.display-btn{
+  display: block !important;
+}
+
+.hide-btn{
+  display: none !important;
+}
+
+
+#login-page{
+  .login-left{
+    letter-spacing: .55rem;
+    font-size: 1.6rem;
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 2rem;
+  }
+
+
+.login-right.form-login{
+  display: none;
+}
+
+
+.display-form{
+  display: block !important;
+}
+
+.hide-form{
+  display: none !important;
+}
+
+
+  .login-right{
+   
+    h3{
+      text-align: center;
+      letter-spacing: 2px;
+      padding-bottom: 0.75rem;
+    }
+    width: 60%;
+  }
+  position: relative;
+  height: 100vh;
+  .container{
+    margin-top: 10rem;
+    position: relative;
+    color: #fff;
+    display: flex;
+   
+
+    .login-form{
+      label{
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+      input{
+        color:#fff;
+      }
+      padding: 3rem;
+      border: 3px solid #fff;
+      border-radius: 8px;
+      input:not([type=submit]){
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 1rem;
+        &:active{
+         background: none;
+         outline: none; 
+        }
+      }
+
+      [type=submit]{
+        border: 1px solid #fff;
+        background: none;
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding: .75rem;
+        border-radius: 25px;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+
+  .page-bg{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../img/pix_spin_login.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+
+#main-form, #output-section{
+  width: 60%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 3px solid #ccc;
+  border-radius: 6px;
+
+
+  [type=text], select{
+    margin: .7rem 0;
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 6px;
+  }
+
+  [type=submit]{
+    display: block;
+    padding: 0.75rem;
+  }
+}
+
+
+.value-0{
+  background: #ccc;
+}
+
+$primary-gray:#e6e6e6;
+
+
+
+#top-bar{
+  a{
+    text-decoration: none;
+    color: #9b9b9b;
+  }
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ccc;
+  [type=search]{
+    text-align: center;
+    padding: .85rem;
+    background: #e6e6e6;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+  .container{
+    min-height: 50px;
+    display: flex;
+  }
+
+  .sec-left{
+    flex: 2;
+    span{
+      font-weight: bold;
+      font-size: 2.1rem;
+      position: relative;
+      bottom: 8px;
+      padding-right: 1rem;
+    }
+    img{
+      height: 40px;
+      width: auto;
+    }
+    
+  }
+  .sec-center{
+    flex: 2;
+
+  }
+  .sec-right{
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    .font-3{
+      position: relative;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      height: 38px;
+      width: 38px;
+      img{
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .login.reg-btn{
+      left: 3rem;
+      position: absolute;
+    }
+  }
+}
+
+.ghost{
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  justify-content: space-between;
+  .edit{
+    position: relative;
+    padding: .75rem;
+    background: $primary-gray;
+    bottom: 8px;
+    font-weight: bold;
+  }
+
+}
+
+
+#profile{
+  margin-bottom: 1.5rem;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .container{
+    padding: 0 0.75rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stats{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+    .stat{
+      justify-content: space-between;
+      display: flex;
+      margin-top: 1rem;
+    }
+
+    .stat-number{
+      font-weight: bold;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  .profile-picture{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: 5.5rem;
+  }
+
+.username{
+  // height: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  
+}
+
+  .main-stats{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    // height: 25px;
+  }
+
+
+  .profile-name{
+    line-height: 1.2;
+    word-spacing: .2rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    .name{
+      font-weight: bold;
+      padding-bottom: 0.2rem;
+    }
+    .desc{
+      font-weight: 400;
+    }
+  }
+
+}
+
+  #posts-1{
+     .container{
+      position: relative;
+      display: flex;
+      gap: .5%;
+      margin-bottom: 0.5rem;
+      justify-content: space-between;
+        img{
+          height: 355px;
+         aspect-ratio: 1/1;     
+          cursor: pointer;
+      }
+    }
+  }
+
+  #feed{
+    margin-top: 5rem;
+  }
+.feed-intro{
+
+  .image{
+    img{
+      width: 60px;
+      height: 60px;
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+
+  }
+
+}
+
+.intro-box{    
+  width: 50%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .name{
+    font-weight: bold;
+    padding-right: 1rem;
+  }
+
+  .follow{
+    .btn-follow{
+      background-color: dodgerblue;
+      color: #fff;
+      padding:.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.btn-follow{
+  background-color: dodgerblue;
+  color: #fff;
+  padding:.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.function-check{
+  padding: 1rem;
+
+  [type=text], [type=password], [type=email]{
+    margin: 0.5rem 0;
+    display:block;
+    width: 100%;
+    padding: 0.5rem .5rem;
+  }
+  [type=submit]{
+    width: 100px;
+    margin-top: 0.5rem;
+    padding: 0.75em 0.5rem;
+  }
+}
+
+.check-container{
+  border: 1px solid #000;
+  height: 500px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
